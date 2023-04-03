@@ -11,7 +11,7 @@
         <!--Splash Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="SplashScreenViewController" id="BYZ-38-t0r" customClass="SplashScreenViewController" customModule="Z1_App_By_Bro_Hor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplashScreenViewController" id="BYZ-38-t0r" customClass="SplashScreenViewController" customModule="Z1_App_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,7 +37,7 @@
                                 </constraints>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enjoy Your Day Bruzz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6S-Ne-c2b">
-                                <rect key="frame" x="104.33333333333333" y="781" width="184.66666666666669" height="21.666666666666629"/>
+                                <rect key="frame" x="104.33333333333333" y="786.33333333333337" width="184.66666666666669" height="21.666666666666629"/>
                                 <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="17"/>
                                 <color key="textColor" red="0.26546609399999999" green="0.71845215559999998" blue="0.88212019210000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -46,6 +46,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="p6S-Ne-c2b" secondAttribute="bottom" constant="10" id="3fU-4i-6CF"/>
                             <constraint firstItem="5AN-Zx-hqJ" firstAttribute="top" secondItem="W5e-OE-B0F" secondAttribute="bottom" constant="150" id="9Fp-7f-qaE"/>
                             <constraint firstItem="scB-bm-6v6" firstAttribute="top" secondItem="5AN-Zx-hqJ" secondAttribute="bottom" constant="60" id="UTc-oo-i9y"/>
                             <constraint firstItem="5AN-Zx-hqJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="btX-Z0-Ccl"/>
@@ -54,7 +55,6 @@
                             <constraint firstItem="p6S-Ne-c2b" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="i14-gD-5jd"/>
                             <constraint firstItem="5AN-Zx-hqJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="moX-WA-9Q7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W5e-OE-B0F" secondAttribute="trailing" constant="20" id="rn3-Gl-JHS"/>
-                            <constraint firstItem="p6S-Ne-c2b" firstAttribute="top" secondItem="scB-bm-6v6" secondAttribute="bottom" constant="165" id="sGv-1h-8iK"/>
                         </constraints>
                     </view>
                     <connections>

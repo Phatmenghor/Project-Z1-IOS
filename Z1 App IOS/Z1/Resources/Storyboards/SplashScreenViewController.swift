@@ -7,16 +7,16 @@
 
 import UIKit
 
-class SplashScreenViewController: UIViewController {
+class SplashScreenViewController: UIViewController, UIWindowSceneDelegate {
     @IBOutlet var bottomLabel: UILabel!
     @IBOutlet var textWelcomeLabel: UILabel!
+    @IBOutlet var welcomeLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         textWelcomeLabel.text = ""
 
         let textWelcome = "Welcome To Z1 By Menghor"
-        let bottomText = "Enjoy Your Day Bruzz"
 
         var charIndex = 0.0
 
@@ -26,17 +26,10 @@ class SplashScreenViewController: UIViewController {
             charIndex += 1
         }
 
-
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            let main = MainTabbarViewController()
-            let mainTabBarController = UINavigationController(rootViewController: main)
-            mainTabBarController.modalPresentationStyle = .fullScreen
-            mainTabBarController.modalTransitionStyle = .coverVertical
-            self.present(mainTabBarController, animated: true) {
-                UIView.animate(withDuration: 1.0, delay: 0.5, animations: {
-                    self.view.alpha = 0
-                }, completion: nil)
-            }
+//            let main = MainTabbarViewController()
+            SceneDelegate.window?.rootViewController = MainTabbarViewController()
+            SceneDelegate.window?.makeKeyAndVisible()
         }
     }
 }
